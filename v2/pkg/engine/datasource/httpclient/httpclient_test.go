@@ -4,17 +4,18 @@ import (
 	"bytes"
 	"compress/gzip"
 	"context"
-	"github.com/tidwall/sjson"
 	"io"
 	"net/http"
 	"net/http/httptest"
 	"net/http/httputil"
 	"testing"
 
+	"github.com/tidwall/sjson"
+
 	"github.com/stretchr/testify/assert"
 
-	"github.com/wundergraph/graphql-go-tools/v2/internal/pkg/quotes"
-	"github.com/wundergraph/graphql-go-tools/v2/pkg/lexer/literal"
+	"github.com/matthewmcneely/graphql-go-tools/v2/internal/pkg/quotes"
+	"github.com/matthewmcneely/graphql-go-tools/v2/pkg/lexer/literal"
 )
 
 func TestHttpClient(t *testing.T) {

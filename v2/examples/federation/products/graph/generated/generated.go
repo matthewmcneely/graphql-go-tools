@@ -17,7 +17,7 @@ import (
 	"github.com/99designs/gqlgen/plugin/federation/fedruntime"
 	gqlparser "github.com/vektah/gqlparser/v2"
 	"github.com/vektah/gqlparser/v2/ast"
-	"github.com/wundergraph/graphql-go-tools/v2/examples/federation/products/graph/model"
+	"github.com/matthewmcneely/graphql-go-tools/v2/examples/federation/products/graph/model"
 )
 
 // region    ************************** generated!.gotpl **************************
@@ -469,7 +469,7 @@ func (ec *executionContext) _Entity_findProductByUpc(ctx context.Context, field 
 	}
 	res := resTmp.(*model.Product)
 	fc.Result = res
-	return ec.marshalNProduct2ᚖgithubᚗcomᚋwundergraphᚋgraphqlᚑgoᚑtoolsᚋexamplesᚋfederationᚋproductsᚋgraphᚋmodelᚐProduct(ctx, field.Selections, res)
+	return ec.marshalNProduct2ᚖgithubᚗcomᚋmatthewmcneelyᚋgraphqlᚑgoᚑtoolsᚋexamplesᚋfederationᚋproductsᚋgraphᚋmodelᚐProduct(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Entity_findProductByUpc(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -707,7 +707,7 @@ func (ec *executionContext) _Query_topProducts(ctx context.Context, field graphq
 	}
 	res := resTmp.([]*model.Product)
 	fc.Result = res
-	return ec.marshalOProduct2ᚕᚖgithubᚗcomᚋwundergraphᚋgraphqlᚑgoᚑtoolsᚋexamplesᚋfederationᚋproductsᚋgraphᚋmodelᚐProduct(ctx, field.Selections, res)
+	return ec.marshalOProduct2ᚕᚖgithubᚗcomᚋmatthewmcneelyᚋgraphqlᚑgoᚑtoolsᚋexamplesᚋfederationᚋproductsᚋgraphᚋmodelᚐProduct(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Query_topProducts(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -1012,7 +1012,7 @@ func (ec *executionContext) _Subscription_updatedPrice(ctx context.Context, fiel
 				w.Write([]byte{'{'})
 				graphql.MarshalString(field.Alias).MarshalGQL(w)
 				w.Write([]byte{':'})
-				ec.marshalNProduct2ᚖgithubᚗcomᚋwundergraphᚋgraphqlᚑgoᚑtoolsᚋexamplesᚋfederationᚋproductsᚋgraphᚋmodelᚐProduct(ctx, field.Selections, res).MarshalGQL(w)
+				ec.marshalNProduct2ᚖgithubᚗcomᚋmatthewmcneelyᚋgraphqlᚑgoᚑtoolsᚋexamplesᚋfederationᚋproductsᚋgraphᚋmodelᚐProduct(ctx, field.Selections, res).MarshalGQL(w)
 				w.Write([]byte{'}'})
 			})
 		case <-ctx.Done():
@@ -1080,7 +1080,7 @@ func (ec *executionContext) _Subscription_updateProductPrice(ctx context.Context
 				w.Write([]byte{'{'})
 				graphql.MarshalString(field.Alias).MarshalGQL(w)
 				w.Write([]byte{':'})
-				ec.marshalNProduct2ᚖgithubᚗcomᚋwundergraphᚋgraphqlᚑgoᚑtoolsᚋexamplesᚋfederationᚋproductsᚋgraphᚋmodelᚐProduct(ctx, field.Selections, res).MarshalGQL(w)
+				ec.marshalNProduct2ᚖgithubᚗcomᚋmatthewmcneelyᚋgraphqlᚑgoᚑtoolsᚋexamplesᚋfederationᚋproductsᚋgraphᚋmodelᚐProduct(ctx, field.Selections, res).MarshalGQL(w)
 				w.Write([]byte{'}'})
 			})
 		case <-ctx.Done():
@@ -1156,7 +1156,7 @@ func (ec *executionContext) _Subscription_stock(ctx context.Context, field graph
 				w.Write([]byte{'{'})
 				graphql.MarshalString(field.Alias).MarshalGQL(w)
 				w.Write([]byte{':'})
-				ec.marshalOProduct2ᚕᚖgithubᚗcomᚋwundergraphᚋgraphqlᚑgoᚑtoolsᚋexamplesᚋfederationᚋproductsᚋgraphᚋmodelᚐProductᚄ(ctx, field.Selections, res).MarshalGQL(w)
+				ec.marshalOProduct2ᚕᚖgithubᚗcomᚋmatthewmcneelyᚋgraphqlᚑgoᚑtoolsᚋexamplesᚋfederationᚋproductsᚋgraphᚋmodelᚐProductᚄ(ctx, field.Selections, res).MarshalGQL(w)
 				w.Write([]byte{'}'})
 			})
 		case <-ctx.Done():
@@ -3633,11 +3633,11 @@ func (ec *executionContext) marshalNInt2int(ctx context.Context, sel ast.Selecti
 	return res
 }
 
-func (ec *executionContext) marshalNProduct2githubᚗcomᚋwundergraphᚋgraphqlᚑgoᚑtoolsᚋexamplesᚋfederationᚋproductsᚋgraphᚋmodelᚐProduct(ctx context.Context, sel ast.SelectionSet, v model.Product) graphql.Marshaler {
+func (ec *executionContext) marshalNProduct2githubᚗcomᚋmatthewmcneelyᚋgraphqlᚑgoᚑtoolsᚋexamplesᚋfederationᚋproductsᚋgraphᚋmodelᚐProduct(ctx context.Context, sel ast.SelectionSet, v model.Product) graphql.Marshaler {
 	return ec._Product(ctx, sel, &v)
 }
 
-func (ec *executionContext) marshalNProduct2ᚖgithubᚗcomᚋwundergraphᚋgraphqlᚑgoᚑtoolsᚋexamplesᚋfederationᚋproductsᚋgraphᚋmodelᚐProduct(ctx context.Context, sel ast.SelectionSet, v *model.Product) graphql.Marshaler {
+func (ec *executionContext) marshalNProduct2ᚖgithubᚗcomᚋmatthewmcneelyᚋgraphqlᚑgoᚑtoolsᚋexamplesᚋfederationᚋproductsᚋgraphᚋmodelᚐProduct(ctx context.Context, sel ast.SelectionSet, v *model.Product) graphql.Marshaler {
 	if v == nil {
 		if !graphql.HasFieldError(ctx, graphql.GetFieldContext(ctx)) {
 			ec.Errorf(ctx, "the requested element is null which the schema does not allow")
@@ -4067,7 +4067,7 @@ func (ec *executionContext) marshalOInt2ᚖint(ctx context.Context, sel ast.Sele
 	return res
 }
 
-func (ec *executionContext) marshalOProduct2ᚕᚖgithubᚗcomᚋwundergraphᚋgraphqlᚑgoᚑtoolsᚋexamplesᚋfederationᚋproductsᚋgraphᚋmodelᚐProduct(ctx context.Context, sel ast.SelectionSet, v []*model.Product) graphql.Marshaler {
+func (ec *executionContext) marshalOProduct2ᚕᚖgithubᚗcomᚋmatthewmcneelyᚋgraphqlᚑgoᚑtoolsᚋexamplesᚋfederationᚋproductsᚋgraphᚋmodelᚐProduct(ctx context.Context, sel ast.SelectionSet, v []*model.Product) graphql.Marshaler {
 	if v == nil {
 		return graphql.Null
 	}
@@ -4094,7 +4094,7 @@ func (ec *executionContext) marshalOProduct2ᚕᚖgithubᚗcomᚋwundergraphᚋg
 			if !isLen1 {
 				defer wg.Done()
 			}
-			ret[i] = ec.marshalOProduct2ᚖgithubᚗcomᚋwundergraphᚋgraphqlᚑgoᚑtoolsᚋexamplesᚋfederationᚋproductsᚋgraphᚋmodelᚐProduct(ctx, sel, v[i])
+			ret[i] = ec.marshalOProduct2ᚖgithubᚗcomᚋmatthewmcneelyᚋgraphqlᚑgoᚑtoolsᚋexamplesᚋfederationᚋproductsᚋgraphᚋmodelᚐProduct(ctx, sel, v[i])
 		}
 		if isLen1 {
 			f(i)
@@ -4108,7 +4108,7 @@ func (ec *executionContext) marshalOProduct2ᚕᚖgithubᚗcomᚋwundergraphᚋg
 	return ret
 }
 
-func (ec *executionContext) marshalOProduct2ᚕᚖgithubᚗcomᚋwundergraphᚋgraphqlᚑgoᚑtoolsᚋexamplesᚋfederationᚋproductsᚋgraphᚋmodelᚐProductᚄ(ctx context.Context, sel ast.SelectionSet, v []*model.Product) graphql.Marshaler {
+func (ec *executionContext) marshalOProduct2ᚕᚖgithubᚗcomᚋmatthewmcneelyᚋgraphqlᚑgoᚑtoolsᚋexamplesᚋfederationᚋproductsᚋgraphᚋmodelᚐProductᚄ(ctx context.Context, sel ast.SelectionSet, v []*model.Product) graphql.Marshaler {
 	if v == nil {
 		return graphql.Null
 	}
@@ -4135,7 +4135,7 @@ func (ec *executionContext) marshalOProduct2ᚕᚖgithubᚗcomᚋwundergraphᚋg
 			if !isLen1 {
 				defer wg.Done()
 			}
-			ret[i] = ec.marshalNProduct2ᚖgithubᚗcomᚋwundergraphᚋgraphqlᚑgoᚑtoolsᚋexamplesᚋfederationᚋproductsᚋgraphᚋmodelᚐProduct(ctx, sel, v[i])
+			ret[i] = ec.marshalNProduct2ᚖgithubᚗcomᚋmatthewmcneelyᚋgraphqlᚑgoᚑtoolsᚋexamplesᚋfederationᚋproductsᚋgraphᚋmodelᚐProduct(ctx, sel, v[i])
 		}
 		if isLen1 {
 			f(i)
@@ -4155,7 +4155,7 @@ func (ec *executionContext) marshalOProduct2ᚕᚖgithubᚗcomᚋwundergraphᚋg
 	return ret
 }
 
-func (ec *executionContext) marshalOProduct2ᚖgithubᚗcomᚋwundergraphᚋgraphqlᚑgoᚑtoolsᚋexamplesᚋfederationᚋproductsᚋgraphᚋmodelᚐProduct(ctx context.Context, sel ast.SelectionSet, v *model.Product) graphql.Marshaler {
+func (ec *executionContext) marshalOProduct2ᚖgithubᚗcomᚋmatthewmcneelyᚋgraphqlᚑgoᚑtoolsᚋexamplesᚋfederationᚋproductsᚋgraphᚋmodelᚐProduct(ctx context.Context, sel ast.SelectionSet, v *model.Product) graphql.Marshaler {
 	if v == nil {
 		return graphql.Null
 	}

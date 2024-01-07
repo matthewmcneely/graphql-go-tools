@@ -17,7 +17,7 @@ import (
 	"github.com/99designs/gqlgen/plugin/federation/fedruntime"
 	gqlparser "github.com/vektah/gqlparser/v2"
 	"github.com/vektah/gqlparser/v2/ast"
-	"github.com/wundergraph/graphql-go-tools/v2/pkg/testing/federationtesting/products/graph/model"
+	"github.com/matthewmcneely/graphql-go-tools/v2/pkg/testing/federationtesting/products/graph/model"
 )
 
 // region    ************************** generated!.gotpl **************************
@@ -523,7 +523,7 @@ func (ec *executionContext) _Entity_findProductByUpc(ctx context.Context, field 
 	}
 	res := resTmp.(*model.Product)
 	fc.Result = res
-	return ec.marshalNProduct2ᚖgithubᚗcomᚋwundergraphᚋgraphqlᚑgoᚑtoolsᚋv2ᚋpkgᚋtestingᚋfederationtestingᚋproductsᚋgraphᚋmodelᚐProduct(ctx, field.Selections, res)
+	return ec.marshalNProduct2ᚖgithubᚗcomᚋmatthewmcneelyᚋgraphqlᚑgoᚑtoolsᚋv2ᚋpkgᚋtestingᚋfederationtestingᚋproductsᚋgraphᚋmodelᚐProduct(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Entity_findProductByUpc(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -585,7 +585,7 @@ func (ec *executionContext) _Mutation_setPrice(ctx context.Context, field graphq
 	}
 	res := resTmp.(*model.Product)
 	fc.Result = res
-	return ec.marshalOProduct2ᚖgithubᚗcomᚋwundergraphᚋgraphqlᚑgoᚑtoolsᚋv2ᚋpkgᚋtestingᚋfederationtestingᚋproductsᚋgraphᚋmodelᚐProduct(ctx, field.Selections, res)
+	return ec.marshalOProduct2ᚖgithubᚗcomᚋmatthewmcneelyᚋgraphqlᚑgoᚑtoolsᚋv2ᚋpkgᚋtestingᚋfederationtestingᚋproductsᚋgraphᚋmodelᚐProduct(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Mutation_setPrice(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -823,7 +823,7 @@ func (ec *executionContext) _Query_topProducts(ctx context.Context, field graphq
 	}
 	res := resTmp.([]*model.Product)
 	fc.Result = res
-	return ec.marshalOProduct2ᚕᚖgithubᚗcomᚋwundergraphᚋgraphqlᚑgoᚑtoolsᚋv2ᚋpkgᚋtestingᚋfederationtestingᚋproductsᚋgraphᚋmodelᚐProduct(ctx, field.Selections, res)
+	return ec.marshalOProduct2ᚕᚖgithubᚗcomᚋmatthewmcneelyᚋgraphqlᚑgoᚑtoolsᚋv2ᚋpkgᚋtestingᚋfederationtestingᚋproductsᚋgraphᚋmodelᚐProduct(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Query_topProducts(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -1128,7 +1128,7 @@ func (ec *executionContext) _Subscription_updatedPrice(ctx context.Context, fiel
 				w.Write([]byte{'{'})
 				graphql.MarshalString(field.Alias).MarshalGQL(w)
 				w.Write([]byte{':'})
-				ec.marshalNProduct2ᚖgithubᚗcomᚋwundergraphᚋgraphqlᚑgoᚑtoolsᚋv2ᚋpkgᚋtestingᚋfederationtestingᚋproductsᚋgraphᚋmodelᚐProduct(ctx, field.Selections, res).MarshalGQL(w)
+				ec.marshalNProduct2ᚖgithubᚗcomᚋmatthewmcneelyᚋgraphqlᚑgoᚑtoolsᚋv2ᚋpkgᚋtestingᚋfederationtestingᚋproductsᚋgraphᚋmodelᚐProduct(ctx, field.Selections, res).MarshalGQL(w)
 				w.Write([]byte{'}'})
 			})
 		case <-ctx.Done():
@@ -1196,7 +1196,7 @@ func (ec *executionContext) _Subscription_updateProductPrice(ctx context.Context
 				w.Write([]byte{'{'})
 				graphql.MarshalString(field.Alias).MarshalGQL(w)
 				w.Write([]byte{':'})
-				ec.marshalNProduct2ᚖgithubᚗcomᚋwundergraphᚋgraphqlᚑgoᚑtoolsᚋv2ᚋpkgᚋtestingᚋfederationtestingᚋproductsᚋgraphᚋmodelᚐProduct(ctx, field.Selections, res).MarshalGQL(w)
+				ec.marshalNProduct2ᚖgithubᚗcomᚋmatthewmcneelyᚋgraphqlᚑgoᚑtoolsᚋv2ᚋpkgᚋtestingᚋfederationtestingᚋproductsᚋgraphᚋmodelᚐProduct(ctx, field.Selections, res).MarshalGQL(w)
 				w.Write([]byte{'}'})
 			})
 		case <-ctx.Done():
@@ -3718,11 +3718,11 @@ func (ec *executionContext) marshalNInt2int(ctx context.Context, sel ast.Selecti
 	return res
 }
 
-func (ec *executionContext) marshalNProduct2githubᚗcomᚋwundergraphᚋgraphqlᚑgoᚑtoolsᚋv2ᚋpkgᚋtestingᚋfederationtestingᚋproductsᚋgraphᚋmodelᚐProduct(ctx context.Context, sel ast.SelectionSet, v model.Product) graphql.Marshaler {
+func (ec *executionContext) marshalNProduct2githubᚗcomᚋmatthewmcneelyᚋgraphqlᚑgoᚑtoolsᚋv2ᚋpkgᚋtestingᚋfederationtestingᚋproductsᚋgraphᚋmodelᚐProduct(ctx context.Context, sel ast.SelectionSet, v model.Product) graphql.Marshaler {
 	return ec._Product(ctx, sel, &v)
 }
 
-func (ec *executionContext) marshalNProduct2ᚖgithubᚗcomᚋwundergraphᚋgraphqlᚑgoᚑtoolsᚋv2ᚋpkgᚋtestingᚋfederationtestingᚋproductsᚋgraphᚋmodelᚐProduct(ctx context.Context, sel ast.SelectionSet, v *model.Product) graphql.Marshaler {
+func (ec *executionContext) marshalNProduct2ᚖgithubᚗcomᚋmatthewmcneelyᚋgraphqlᚑgoᚑtoolsᚋv2ᚋpkgᚋtestingᚋfederationtestingᚋproductsᚋgraphᚋmodelᚐProduct(ctx context.Context, sel ast.SelectionSet, v *model.Product) graphql.Marshaler {
 	if v == nil {
 		if !graphql.HasFieldError(ctx, graphql.GetFieldContext(ctx)) {
 			ec.Errorf(ctx, "the requested element is null which the schema does not allow")
@@ -4152,7 +4152,7 @@ func (ec *executionContext) marshalOInt2ᚖint(ctx context.Context, sel ast.Sele
 	return res
 }
 
-func (ec *executionContext) marshalOProduct2ᚕᚖgithubᚗcomᚋwundergraphᚋgraphqlᚑgoᚑtoolsᚋv2ᚋpkgᚋtestingᚋfederationtestingᚋproductsᚋgraphᚋmodelᚐProduct(ctx context.Context, sel ast.SelectionSet, v []*model.Product) graphql.Marshaler {
+func (ec *executionContext) marshalOProduct2ᚕᚖgithubᚗcomᚋmatthewmcneelyᚋgraphqlᚑgoᚑtoolsᚋv2ᚋpkgᚋtestingᚋfederationtestingᚋproductsᚋgraphᚋmodelᚐProduct(ctx context.Context, sel ast.SelectionSet, v []*model.Product) graphql.Marshaler {
 	if v == nil {
 		return graphql.Null
 	}
@@ -4179,7 +4179,7 @@ func (ec *executionContext) marshalOProduct2ᚕᚖgithubᚗcomᚋwundergraphᚋg
 			if !isLen1 {
 				defer wg.Done()
 			}
-			ret[i] = ec.marshalOProduct2ᚖgithubᚗcomᚋwundergraphᚋgraphqlᚑgoᚑtoolsᚋv2ᚋpkgᚋtestingᚋfederationtestingᚋproductsᚋgraphᚋmodelᚐProduct(ctx, sel, v[i])
+			ret[i] = ec.marshalOProduct2ᚖgithubᚗcomᚋmatthewmcneelyᚋgraphqlᚑgoᚑtoolsᚋv2ᚋpkgᚋtestingᚋfederationtestingᚋproductsᚋgraphᚋmodelᚐProduct(ctx, sel, v[i])
 		}
 		if isLen1 {
 			f(i)
@@ -4193,7 +4193,7 @@ func (ec *executionContext) marshalOProduct2ᚕᚖgithubᚗcomᚋwundergraphᚋg
 	return ret
 }
 
-func (ec *executionContext) marshalOProduct2ᚖgithubᚗcomᚋwundergraphᚋgraphqlᚑgoᚑtoolsᚋv2ᚋpkgᚋtestingᚋfederationtestingᚋproductsᚋgraphᚋmodelᚐProduct(ctx context.Context, sel ast.SelectionSet, v *model.Product) graphql.Marshaler {
+func (ec *executionContext) marshalOProduct2ᚖgithubᚗcomᚋmatthewmcneelyᚋgraphqlᚑgoᚑtoolsᚋv2ᚋpkgᚋtestingᚋfederationtestingᚋproductsᚋgraphᚋmodelᚐProduct(ctx context.Context, sel ast.SelectionSet, v *model.Product) graphql.Marshaler {
 	if v == nil {
 		return graphql.Null
 	}

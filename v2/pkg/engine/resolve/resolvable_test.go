@@ -7,7 +7,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/wundergraph/graphql-go-tools/v2/pkg/ast"
+	"github.com/matthewmcneely/graphql-go-tools/v2/pkg/ast"
 )
 
 func TestResolvable_Resolve(t *testing.T) {

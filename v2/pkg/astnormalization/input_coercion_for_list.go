@@ -7,10 +7,10 @@ import (
 	"github.com/buger/jsonparser"
 	"github.com/tidwall/sjson"
 
-	"github.com/wundergraph/graphql-go-tools/v2/pkg/ast"
-	"github.com/wundergraph/graphql-go-tools/v2/pkg/astvisitor"
-	"github.com/wundergraph/graphql-go-tools/v2/pkg/lexer/literal"
-	"github.com/wundergraph/graphql-go-tools/v2/pkg/pool"
+	"github.com/matthewmcneely/graphql-go-tools/v2/pkg/ast"
+	"github.com/matthewmcneely/graphql-go-tools/v2/pkg/astvisitor"
+	"github.com/matthewmcneely/graphql-go-tools/v2/pkg/lexer/literal"
+	"github.com/matthewmcneely/graphql-go-tools/v2/pkg/pool"
 )
 
 func inputCoercionForList(walker *astvisitor.Walker) {

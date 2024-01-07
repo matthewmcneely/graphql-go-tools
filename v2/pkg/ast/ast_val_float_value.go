@@ -3,8 +3,8 @@ package ast
 import (
 	"bytes"
 
-	"github.com/wundergraph/graphql-go-tools/v2/internal/pkg/unsafebytes"
-	"github.com/wundergraph/graphql-go-tools/v2/pkg/lexer/position"
+	"github.com/matthewmcneely/graphql-go-tools/v2/internal/pkg/unsafebytes"
+	"github.com/matthewmcneely/graphql-go-tools/v2/pkg/lexer/position"
 )
 
 // FloatValue

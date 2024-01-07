@@ -3,9 +3,9 @@ package operationreport
 import (
 	"fmt"
 
-	"github.com/wundergraph/graphql-go-tools/v2/pkg/ast"
-	"github.com/wundergraph/graphql-go-tools/v2/pkg/graphqlerrors"
-	"github.com/wundergraph/graphql-go-tools/v2/pkg/lexer/position"
+	"github.com/matthewmcneely/graphql-go-tools/v2/pkg/ast"
+	"github.com/matthewmcneely/graphql-go-tools/v2/pkg/graphqlerrors"
+	"github.com/matthewmcneely/graphql-go-tools/v2/pkg/lexer/position"
 )
 
 const (

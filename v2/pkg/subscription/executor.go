@@ -5,8 +5,8 @@ package subscription
 import (
 	"context"
 
-	"github.com/wundergraph/graphql-go-tools/v2/pkg/ast"
-	"github.com/wundergraph/graphql-go-tools/v2/pkg/engine/resolve"
+	"github.com/matthewmcneely/graphql-go-tools/v2/pkg/ast"
+	"github.com/matthewmcneely/graphql-go-tools/v2/pkg/engine/resolve"
 )
 
 // Executor is an abstraction for executing a GraphQL engine

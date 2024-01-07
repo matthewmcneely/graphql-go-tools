@@ -7,12 +7,12 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/wundergraph/graphql-go-tools/v2/internal/pkg/unsafeparser"
-	"github.com/wundergraph/graphql-go-tools/v2/pkg/ast"
-	"github.com/wundergraph/graphql-go-tools/v2/pkg/astnormalization"
-	"github.com/wundergraph/graphql-go-tools/v2/pkg/astparser"
-	"github.com/wundergraph/graphql-go-tools/v2/pkg/astprinter"
-	"github.com/wundergraph/graphql-go-tools/v2/pkg/operationreport"
+	"github.com/matthewmcneely/graphql-go-tools/v2/internal/pkg/unsafeparser"
+	"github.com/matthewmcneely/graphql-go-tools/v2/pkg/ast"
+	"github.com/matthewmcneely/graphql-go-tools/v2/pkg/astnormalization"
+	"github.com/matthewmcneely/graphql-go-tools/v2/pkg/astparser"
+	"github.com/matthewmcneely/graphql-go-tools/v2/pkg/astprinter"
+	"github.com/matthewmcneely/graphql-go-tools/v2/pkg/operationreport"
 )
 
 type options struct {
@@ -3781,7 +3781,7 @@ func TestExecutionValidation(t *testing.T) {
 					ValidArguments(), Valid, withDisableNormalization())
 			})
 			t.Run("complex values", func(t *testing.T) {
-				runWithDefinition(t, wundergraphSchema, `
+				runWithDefinition(t, matthewmcneelySchema, `
 					query FirstNamespace($id: String $mode: QueryMode) {
 						findFirstnamespace(where: {id: {equals: $id mode: $mode}}) {
 							id
@@ -3796,7 +3796,7 @@ func TestExecutionValidation(t *testing.T) {
 					`, ValidArguments(), Valid)
 			})
 			t.Run("complex values", func(t *testing.T) {
-				runWithDefinition(t, wundergraphSchema, `
+				runWithDefinition(t, matthewmcneelySchema, `
 					query FirstNamespace($id: String $mode: QueryMode) {
 						findFirstnamespace(where: {id: {equals: $id mode: $mode}}) {
 							id
@@ -3811,7 +3811,7 @@ func TestExecutionValidation(t *testing.T) {
 					`, Values(), Valid)
 			})
 			t.Run("complex values with input object", func(t *testing.T) {
-				runWithDefinition(t, wundergraphSchema, `
+				runWithDefinition(t, matthewmcneelySchema, `
 					query FirstAPI($a: String $b: StringFilter) {
 						findFirstapi(where: {id: {equals: $a} AND: {name: $b}}) {
 							id
@@ -3825,7 +3825,7 @@ func TestExecutionValidation(t *testing.T) {
 					`, Values(), Valid)
 			})
 			t.Run("with boolean input", func(t *testing.T) {
-				runWithDefinition(t, wundergraphSchema, `
+				runWithDefinition(t, matthewmcneelySchema, `
 					query QueryWithBooleanInput($a: Boolean) {
 						findFirstnodepool(
 							where: { shared: { equals: $a } }
@@ -3836,7 +3836,7 @@ func TestExecutionValidation(t *testing.T) {
 					`, Values(), Valid)
 			})
 			t.Run("with nested boolean where clause", func(t *testing.T) {
-				runWithDefinition(t, wundergraphSchema, `
+				runWithDefinition(t, matthewmcneelySchema, `
 					query QueryWithNestedBooleanClause($a: String) {
 						findFirstnodepool(
 							where: { id: { equals: $a }, AND: { shared: { equals: true } } }
@@ -3847,7 +3847,7 @@ func TestExecutionValidation(t *testing.T) {
 					`, Values(), Valid)
 			})
 			t.Run("with variables inside an input object", func(t *testing.T) {
-				runWithDefinition(t, wundergraphSchema, `
+				runWithDefinition(t, matthewmcneelySchema, `
 					query QueryWithNestedBooleanClause($a: String, $b: Boolean) {
 						findFirstnodepool(
 							where: { id: { equals: $b }, AND: { shared: { equals: $a } } }
@@ -5401,7 +5401,7 @@ directive @fromClaim(
 ) on VARIABLE_DEFINITION
 `
 
-const wundergraphSchema = `
+const matthewmcneelySchema = `
 
 schema {
 	query: Query

@@ -1,8 +1,8 @@
 package postprocess
 
 import (
-	"github.com/wundergraph/graphql-go-tools/v2/pkg/engine/plan"
-	"github.com/wundergraph/graphql-go-tools/v2/pkg/engine/resolve"
+	"github.com/matthewmcneely/graphql-go-tools/v2/pkg/engine/plan"
+	"github.com/matthewmcneely/graphql-go-tools/v2/pkg/engine/resolve"
 )
 
 // DataSourceFetch is a postprocessor that transforms fetches into more concrete fetch types

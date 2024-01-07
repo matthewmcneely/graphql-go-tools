@@ -11,8 +11,8 @@ import (
 
 	"github.com/buger/jsonparser"
 	log "github.com/jensneuse/abstractlogger"
+	"github.com/matthewmcneely/graphql-go-tools/v2/pkg/engine/resolve"
 	"github.com/r3labs/sse/v2"
-	"github.com/wundergraph/graphql-go-tools/v2/pkg/engine/resolve"
 )
 
 var (

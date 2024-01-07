@@ -5,8 +5,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/wundergraph/graphql-go-tools/v2/pkg/engine/plan"
-	"github.com/wundergraph/graphql-go-tools/v2/pkg/engine/resolve"
+	"github.com/matthewmcneely/graphql-go-tools/v2/pkg/engine/plan"
+	"github.com/matthewmcneely/graphql-go-tools/v2/pkg/engine/resolve"
 )
 
 // ProcessDataSource is a postprocessor that processes input template and sort fetches of serial fetch

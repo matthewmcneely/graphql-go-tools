@@ -22,7 +22,7 @@
 // - GraphQL APIs (you can combine multiple GraphQL APIs into one single GraphQL Endpoint, nesting is possible)
 // - Webassembly/WASM Lambdas (e.g. resolve a field using a Rust lambda)
 //
-// If you're looking for a ready to use solution that has all this functionality packaged as a Gateway have a look at: https://wundergraph.com
+// If you're looking for a ready to use solution that has all this functionality packaged as a Gateway have a look at: https://matthewmcneely.com
 //
 // Created by Jens Neuse
 package main
@@ -34,17 +34,17 @@ import (
 
 	"github.com/cespare/xxhash/v2"
 
-	"github.com/wundergraph/graphql-go-tools/v2/pkg/ast"
-	"github.com/wundergraph/graphql-go-tools/v2/pkg/astnormalization"
-	"github.com/wundergraph/graphql-go-tools/v2/pkg/astparser"
-	"github.com/wundergraph/graphql-go-tools/v2/pkg/astprinter"
-	"github.com/wundergraph/graphql-go-tools/v2/pkg/asttransform"
-	"github.com/wundergraph/graphql-go-tools/v2/pkg/astvalidation"
-	"github.com/wundergraph/graphql-go-tools/v2/pkg/astvisitor"
-	"github.com/wundergraph/graphql-go-tools/v2/pkg/engine/datasource/staticdatasource"
-	"github.com/wundergraph/graphql-go-tools/v2/pkg/engine/plan"
-	"github.com/wundergraph/graphql-go-tools/v2/pkg/engine/resolve"
-	"github.com/wundergraph/graphql-go-tools/v2/pkg/operationreport"
+	"github.com/matthewmcneely/graphql-go-tools/v2/pkg/ast"
+	"github.com/matthewmcneely/graphql-go-tools/v2/pkg/astnormalization"
+	"github.com/matthewmcneely/graphql-go-tools/v2/pkg/astparser"
+	"github.com/matthewmcneely/graphql-go-tools/v2/pkg/astprinter"
+	"github.com/matthewmcneely/graphql-go-tools/v2/pkg/asttransform"
+	"github.com/matthewmcneely/graphql-go-tools/v2/pkg/astvalidation"
+	"github.com/matthewmcneely/graphql-go-tools/v2/pkg/astvisitor"
+	"github.com/matthewmcneely/graphql-go-tools/v2/pkg/engine/datasource/staticdatasource"
+	"github.com/matthewmcneely/graphql-go-tools/v2/pkg/engine/plan"
+	"github.com/matthewmcneely/graphql-go-tools/v2/pkg/engine/resolve"
+	"github.com/matthewmcneely/graphql-go-tools/v2/pkg/operationreport"
 )
 
 /*

@@ -11,7 +11,7 @@ import (
 
 	"github.com/jensneuse/abstractlogger"
 
-	"github.com/wundergraph/graphql-go-tools/v2/pkg/graphql"
+	"github.com/matthewmcneely/graphql-go-tools/v2/pkg/graphql"
 )
 
 var ErrCouldNotReadMessageFromClient = errors.New("could not read message from client")

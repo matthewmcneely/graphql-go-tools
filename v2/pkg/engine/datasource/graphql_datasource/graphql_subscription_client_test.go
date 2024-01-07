@@ -11,8 +11,8 @@ import (
 	"testing"
 	"time"
 
+	"github.com/matthewmcneely/graphql-go-tools/v2/pkg/engine/resolve"
 	"github.com/stretchr/testify/require"
-	"github.com/wundergraph/graphql-go-tools/v2/pkg/engine/resolve"
 
 	"github.com/buger/jsonparser"
 	ll "github.com/jensneuse/abstractlogger"

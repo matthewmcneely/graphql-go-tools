@@ -3,10 +3,10 @@ package graphql_datasource
 import (
 	"testing"
 
-	"github.com/wundergraph/graphql-go-tools/v2/pkg/ast"
-	. "github.com/wundergraph/graphql-go-tools/v2/pkg/engine/datasourcetesting"
-	"github.com/wundergraph/graphql-go-tools/v2/pkg/engine/plan"
-	"github.com/wundergraph/graphql-go-tools/v2/pkg/engine/resolve"
+	"github.com/matthewmcneely/graphql-go-tools/v2/pkg/ast"
+	. "github.com/matthewmcneely/graphql-go-tools/v2/pkg/engine/datasourcetesting"
+	"github.com/matthewmcneely/graphql-go-tools/v2/pkg/engine/plan"
+	"github.com/matthewmcneely/graphql-go-tools/v2/pkg/engine/resolve"
 )
 
 func TestGraphQLDataSourceFederation(t *testing.T) {

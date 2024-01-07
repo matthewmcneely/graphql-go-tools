@@ -6,9 +6,9 @@ import (
 	"io"
 	"testing"
 
-	"github.com/wundergraph/graphql-go-tools/v2/pkg/engine/datasourcetesting"
-	"github.com/wundergraph/graphql-go-tools/v2/pkg/engine/plan"
-	"github.com/wundergraph/graphql-go-tools/v2/pkg/engine/resolve"
+	"github.com/matthewmcneely/graphql-go-tools/v2/pkg/engine/datasourcetesting"
+	"github.com/matthewmcneely/graphql-go-tools/v2/pkg/engine/plan"
+	"github.com/matthewmcneely/graphql-go-tools/v2/pkg/engine/resolve"
 )
 
 type testPubsub struct {

@@ -7,8 +7,8 @@ import (
 
 	log "github.com/jensneuse/abstractlogger"
 
-	graphqlDataSource "github.com/wundergraph/graphql-go-tools/v2/pkg/engine/datasource/graphql_datasource"
-	"github.com/wundergraph/graphql-go-tools/v2/pkg/graphql"
+	graphqlDataSource "github.com/matthewmcneely/graphql-go-tools/v2/pkg/engine/datasource/graphql_datasource"
+	"github.com/matthewmcneely/graphql-go-tools/v2/pkg/graphql"
 )
 
 type DataSourceObserver interface {

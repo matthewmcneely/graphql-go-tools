@@ -4,14 +4,14 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/wundergraph/graphql-go-tools/v2/pkg/ast"
-	"github.com/wundergraph/graphql-go-tools/v2/pkg/astnormalization"
-	"github.com/wundergraph/graphql-go-tools/v2/pkg/astparser"
-	"github.com/wundergraph/graphql-go-tools/v2/pkg/astprinter"
-	"github.com/wundergraph/graphql-go-tools/v2/pkg/asttransform"
-	"github.com/wundergraph/graphql-go-tools/v2/pkg/astvalidation"
-	"github.com/wundergraph/graphql-go-tools/v2/pkg/astvisitor"
-	"github.com/wundergraph/graphql-go-tools/v2/pkg/operationreport"
+	"github.com/matthewmcneely/graphql-go-tools/v2/pkg/ast"
+	"github.com/matthewmcneely/graphql-go-tools/v2/pkg/astnormalization"
+	"github.com/matthewmcneely/graphql-go-tools/v2/pkg/astparser"
+	"github.com/matthewmcneely/graphql-go-tools/v2/pkg/astprinter"
+	"github.com/matthewmcneely/graphql-go-tools/v2/pkg/asttransform"
+	"github.com/matthewmcneely/graphql-go-tools/v2/pkg/astvalidation"
+	"github.com/matthewmcneely/graphql-go-tools/v2/pkg/astvisitor"
+	"github.com/matthewmcneely/graphql-go-tools/v2/pkg/operationreport"
 )
 
 const (

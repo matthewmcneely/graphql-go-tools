@@ -16,7 +16,7 @@ import (
 	"github.com/99designs/gqlgen/plugin/federation/fedruntime"
 	gqlparser "github.com/vektah/gqlparser/v2"
 	"github.com/vektah/gqlparser/v2/ast"
-	"github.com/wundergraph/graphql-go-tools/v2/examples/federation/reviews/graph/model"
+	"github.com/matthewmcneely/graphql-go-tools/v2/examples/federation/reviews/graph/model"
 )
 
 // region    ************************** generated!.gotpl **************************
@@ -435,7 +435,7 @@ func (ec *executionContext) _Entity_findProductByUpc(ctx context.Context, field 
 	}
 	res := resTmp.(*model.Product)
 	fc.Result = res
-	return ec.marshalNProduct2ᚖgithubᚗcomᚋwundergraphᚋgraphqlᚑgoᚑtoolsᚋexamplesᚋfederationᚋreviewsᚋgraphᚋmodelᚐProduct(ctx, field.Selections, res)
+	return ec.marshalNProduct2ᚖgithubᚗcomᚋmatthewmcneelyᚋgraphqlᚑgoᚑtoolsᚋexamplesᚋfederationᚋreviewsᚋgraphᚋmodelᚐProduct(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Entity_findProductByUpc(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -496,7 +496,7 @@ func (ec *executionContext) _Entity_findUserByID(ctx context.Context, field grap
 	}
 	res := resTmp.(*model.User)
 	fc.Result = res
-	return ec.marshalNUser2ᚖgithubᚗcomᚋwundergraphᚋgraphqlᚑgoᚑtoolsᚋexamplesᚋfederationᚋreviewsᚋgraphᚋmodelᚐUser(ctx, field.Selections, res)
+	return ec.marshalNUser2ᚖgithubᚗcomᚋmatthewmcneelyᚋgraphqlᚑgoᚑtoolsᚋexamplesᚋfederationᚋreviewsᚋgraphᚋmodelᚐUser(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Entity_findUserByID(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -600,7 +600,7 @@ func (ec *executionContext) _Product_reviews(ctx context.Context, field graphql.
 	}
 	res := resTmp.([]*model.Review)
 	fc.Result = res
-	return ec.marshalOReview2ᚕᚖgithubᚗcomᚋwundergraphᚋgraphqlᚑgoᚑtoolsᚋexamplesᚋfederationᚋreviewsᚋgraphᚋmodelᚐReview(ctx, field.Selections, res)
+	return ec.marshalOReview2ᚕᚖgithubᚗcomᚋmatthewmcneelyᚋgraphqlᚑgoᚑtoolsᚋexamplesᚋfederationᚋreviewsᚋgraphᚋmodelᚐReview(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Product_reviews(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -928,7 +928,7 @@ func (ec *executionContext) _Review_author(ctx context.Context, field graphql.Co
 	}
 	res := resTmp.(*model.User)
 	fc.Result = res
-	return ec.marshalNUser2ᚖgithubᚗcomᚋwundergraphᚋgraphqlᚑgoᚑtoolsᚋexamplesᚋfederationᚋreviewsᚋgraphᚋmodelᚐUser(ctx, field.Selections, res)
+	return ec.marshalNUser2ᚖgithubᚗcomᚋmatthewmcneelyᚋgraphqlᚑgoᚑtoolsᚋexamplesᚋfederationᚋreviewsᚋgraphᚋmodelᚐUser(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Review_author(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -980,7 +980,7 @@ func (ec *executionContext) _Review_product(ctx context.Context, field graphql.C
 	}
 	res := resTmp.(*model.Product)
 	fc.Result = res
-	return ec.marshalNProduct2ᚖgithubᚗcomᚋwundergraphᚋgraphqlᚑgoᚑtoolsᚋexamplesᚋfederationᚋreviewsᚋgraphᚋmodelᚐProduct(ctx, field.Selections, res)
+	return ec.marshalNProduct2ᚖgithubᚗcomᚋmatthewmcneelyᚋgraphqlᚑgoᚑtoolsᚋexamplesᚋfederationᚋreviewsᚋgraphᚋmodelᚐProduct(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Review_product(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -1115,7 +1115,7 @@ func (ec *executionContext) _User_reviews(ctx context.Context, field graphql.Col
 	}
 	res := resTmp.([]*model.Review)
 	fc.Result = res
-	return ec.marshalOReview2ᚕᚖgithubᚗcomᚋwundergraphᚋgraphqlᚑgoᚑtoolsᚋexamplesᚋfederationᚋreviewsᚋgraphᚋmodelᚐReview(ctx, field.Selections, res)
+	return ec.marshalOReview2ᚕᚖgithubᚗcomᚋmatthewmcneelyᚋgraphqlᚑgoᚑtoolsᚋexamplesᚋfederationᚋreviewsᚋgraphᚋmodelᚐReview(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_User_reviews(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -3634,11 +3634,11 @@ func (ec *executionContext) marshalNID2string(ctx context.Context, sel ast.Selec
 	return res
 }
 
-func (ec *executionContext) marshalNProduct2githubᚗcomᚋwundergraphᚋgraphqlᚑgoᚑtoolsᚋexamplesᚋfederationᚋreviewsᚋgraphᚋmodelᚐProduct(ctx context.Context, sel ast.SelectionSet, v model.Product) graphql.Marshaler {
+func (ec *executionContext) marshalNProduct2githubᚗcomᚋmatthewmcneelyᚋgraphqlᚑgoᚑtoolsᚋexamplesᚋfederationᚋreviewsᚋgraphᚋmodelᚐProduct(ctx context.Context, sel ast.SelectionSet, v model.Product) graphql.Marshaler {
 	return ec._Product(ctx, sel, &v)
 }
 
-func (ec *executionContext) marshalNProduct2ᚖgithubᚗcomᚋwundergraphᚋgraphqlᚑgoᚑtoolsᚋexamplesᚋfederationᚋreviewsᚋgraphᚋmodelᚐProduct(ctx context.Context, sel ast.SelectionSet, v *model.Product) graphql.Marshaler {
+func (ec *executionContext) marshalNProduct2ᚖgithubᚗcomᚋmatthewmcneelyᚋgraphqlᚑgoᚑtoolsᚋexamplesᚋfederationᚋreviewsᚋgraphᚋmodelᚐProduct(ctx context.Context, sel ast.SelectionSet, v *model.Product) graphql.Marshaler {
 	if v == nil {
 		if !graphql.HasFieldError(ctx, graphql.GetFieldContext(ctx)) {
 			ec.Errorf(ctx, "the requested element is null which the schema does not allow")
@@ -3663,11 +3663,11 @@ func (ec *executionContext) marshalNString2string(ctx context.Context, sel ast.S
 	return res
 }
 
-func (ec *executionContext) marshalNUser2githubᚗcomᚋwundergraphᚋgraphqlᚑgoᚑtoolsᚋexamplesᚋfederationᚋreviewsᚋgraphᚋmodelᚐUser(ctx context.Context, sel ast.SelectionSet, v model.User) graphql.Marshaler {
+func (ec *executionContext) marshalNUser2githubᚗcomᚋmatthewmcneelyᚋgraphqlᚑgoᚑtoolsᚋexamplesᚋfederationᚋreviewsᚋgraphᚋmodelᚐUser(ctx context.Context, sel ast.SelectionSet, v model.User) graphql.Marshaler {
 	return ec._User(ctx, sel, &v)
 }
 
-func (ec *executionContext) marshalNUser2ᚖgithubᚗcomᚋwundergraphᚋgraphqlᚑgoᚑtoolsᚋexamplesᚋfederationᚋreviewsᚋgraphᚋmodelᚐUser(ctx context.Context, sel ast.SelectionSet, v *model.User) graphql.Marshaler {
+func (ec *executionContext) marshalNUser2ᚖgithubᚗcomᚋmatthewmcneelyᚋgraphqlᚑgoᚑtoolsᚋexamplesᚋfederationᚋreviewsᚋgraphᚋmodelᚐUser(ctx context.Context, sel ast.SelectionSet, v *model.User) graphql.Marshaler {
 	if v == nil {
 		if !graphql.HasFieldError(ctx, graphql.GetFieldContext(ctx)) {
 			ec.Errorf(ctx, "the requested element is null which the schema does not allow")
@@ -4066,7 +4066,7 @@ func (ec *executionContext) marshalOBoolean2ᚖbool(ctx context.Context, sel ast
 	return res
 }
 
-func (ec *executionContext) marshalOReview2ᚕᚖgithubᚗcomᚋwundergraphᚋgraphqlᚑgoᚑtoolsᚋexamplesᚋfederationᚋreviewsᚋgraphᚋmodelᚐReview(ctx context.Context, sel ast.SelectionSet, v []*model.Review) graphql.Marshaler {
+func (ec *executionContext) marshalOReview2ᚕᚖgithubᚗcomᚋmatthewmcneelyᚋgraphqlᚑgoᚑtoolsᚋexamplesᚋfederationᚋreviewsᚋgraphᚋmodelᚐReview(ctx context.Context, sel ast.SelectionSet, v []*model.Review) graphql.Marshaler {
 	if v == nil {
 		return graphql.Null
 	}
@@ -4093,7 +4093,7 @@ func (ec *executionContext) marshalOReview2ᚕᚖgithubᚗcomᚋwundergraphᚋgr
 			if !isLen1 {
 				defer wg.Done()
 			}
-			ret[i] = ec.marshalOReview2ᚖgithubᚗcomᚋwundergraphᚋgraphqlᚑgoᚑtoolsᚋexamplesᚋfederationᚋreviewsᚋgraphᚋmodelᚐReview(ctx, sel, v[i])
+			ret[i] = ec.marshalOReview2ᚖgithubᚗcomᚋmatthewmcneelyᚋgraphqlᚑgoᚑtoolsᚋexamplesᚋfederationᚋreviewsᚋgraphᚋmodelᚐReview(ctx, sel, v[i])
 		}
 		if isLen1 {
 			f(i)
@@ -4107,7 +4107,7 @@ func (ec *executionContext) marshalOReview2ᚕᚖgithubᚗcomᚋwundergraphᚋgr
 	return ret
 }
 
-func (ec *executionContext) marshalOReview2ᚖgithubᚗcomᚋwundergraphᚋgraphqlᚑgoᚑtoolsᚋexamplesᚋfederationᚋreviewsᚋgraphᚋmodelᚐReview(ctx context.Context, sel ast.SelectionSet, v *model.Review) graphql.Marshaler {
+func (ec *executionContext) marshalOReview2ᚖgithubᚗcomᚋmatthewmcneelyᚋgraphqlᚑgoᚑtoolsᚋexamplesᚋfederationᚋreviewsᚋgraphᚋmodelᚐReview(ctx context.Context, sel ast.SelectionSet, v *model.Review) graphql.Marshaler {
 	if v == nil {
 		return graphql.Null
 	}

@@ -9,9 +9,9 @@ import (
 
 	"github.com/tidwall/gjson"
 
-	"github.com/wundergraph/graphql-go-tools/v2/pkg/ast"
-	"github.com/wundergraph/graphql-go-tools/v2/pkg/astjson"
-	"github.com/wundergraph/graphql-go-tools/v2/pkg/pool"
+	"github.com/matthewmcneely/graphql-go-tools/v2/pkg/ast"
+	"github.com/matthewmcneely/graphql-go-tools/v2/pkg/astjson"
+	"github.com/matthewmcneely/graphql-go-tools/v2/pkg/pool"
 )
 
 type Resolvable struct {

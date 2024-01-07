@@ -10,8 +10,8 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/wundergraph/graphql-go-tools/v2/pkg/testing/federationtesting/products/graph/generated"
-	"github.com/wundergraph/graphql-go-tools/v2/pkg/testing/federationtesting/products/graph/model"
+	"github.com/matthewmcneely/graphql-go-tools/v2/pkg/testing/federationtesting/products/graph/generated"
+	"github.com/matthewmcneely/graphql-go-tools/v2/pkg/testing/federationtesting/products/graph/model"
 )
 
 // SetPrice is the resolver for the setPrice field.

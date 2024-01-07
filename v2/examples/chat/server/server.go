@@ -7,7 +7,7 @@ import (
 	"github.com/99designs/gqlgen/graphql/playground"
 	"github.com/rs/cors"
 
-	"github.com/wundergraph/graphql-go-tools/v2/examples/chat"
+	"github.com/matthewmcneely/graphql-go-tools/v2/examples/chat"
 )
 
 func main() {

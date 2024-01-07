@@ -1,6 +1,6 @@
 package sdlmerge
 
-import "github.com/wundergraph/graphql-go-tools/v2/pkg/ast"
+import "github.com/matthewmcneely/graphql-go-tools/v2/pkg/ast"
 
 type fieldlessSharedType interface {
 	areValuesIdentical(valueRefsToCompare []int) bool

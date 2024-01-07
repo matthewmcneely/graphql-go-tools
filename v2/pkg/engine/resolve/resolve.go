@@ -1,4 +1,4 @@
-//go:generate mockgen --build_flags=--mod=mod -self_package=github.com/wundergraph/graphql-go-tools/v2/pkg/engine/resolve -destination=resolve_mock_test.go -package=resolve . DataSource,BeforeFetchHook,AfterFetchHook
+//go:generate mockgen --build_flags=--mod=mod -self_package=github.com/matthewmcneely/graphql-go-tools/v2/pkg/engine/resolve -destination=resolve_mock_test.go -package=resolve . DataSource,BeforeFetchHook,AfterFetchHook
 
 package resolve
 
@@ -12,10 +12,10 @@ import (
 
 	"github.com/alitto/pond"
 	"github.com/buger/jsonparser"
+	"github.com/matthewmcneely/graphql-go-tools/v2/internal/pkg/xcontext"
+	"github.com/matthewmcneely/graphql-go-tools/v2/pkg/ast"
+	"github.com/matthewmcneely/graphql-go-tools/v2/pkg/pool"
 	"github.com/pkg/errors"
-	"github.com/wundergraph/graphql-go-tools/v2/internal/pkg/xcontext"
-	"github.com/wundergraph/graphql-go-tools/v2/pkg/ast"
-	"github.com/wundergraph/graphql-go-tools/v2/pkg/pool"
 	"go.uber.org/atomic"
 )
 

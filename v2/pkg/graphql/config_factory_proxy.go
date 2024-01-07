@@ -4,8 +4,8 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/wundergraph/graphql-go-tools/v2/pkg/astparser"
-	graphqlDataSource "github.com/wundergraph/graphql-go-tools/v2/pkg/engine/datasource/graphql_datasource"
+	"github.com/matthewmcneely/graphql-go-tools/v2/pkg/astparser"
+	graphqlDataSource "github.com/matthewmcneely/graphql-go-tools/v2/pkg/engine/datasource/graphql_datasource"
 )
 
 type proxyEngineConfigFactoryOptions struct {
